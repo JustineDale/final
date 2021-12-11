@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SHOP</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div>
+                <a href="index.html">NCR Shop</a>
+            </div>
+            <div>
+                <a href="Zamora-ECommerce.html">Bags</a>
+                <a href="Shoes.html">Shoes</a>
+                <a href="Signy.html">Sign In</a>
+                <a href="cart.html">Cart</a>
+            </div>
+	   
+
+        </header>
+       
+        <main>
+            <hr>
+      <div id="input1">
+        <img src="images/bag1.jpg" alt="product-5"/>
+        
+      </div>
+
+      <div id="sidebar" >
+        <h1>Description</h1>
+        <p>Price: 3000</p>
+        <p>Valentino bags are made with genuine natural Italian leathers that with the right care will last a lifetime. Be sure to keep your bags out of prolonged direct sunlight or extreme heat. If your bag does get wet use a dry cloth to blot the spots as quickly as possible, and then let the bag air dry away from any heat source.</p>
+        <p>When your bag is not being regularly used we recommend stuffing it with filler so it retains its shape, and to store it in the yellow dust-cover provided with your bag.</p>
+        <p>If your bag does get soiled, you can     clean it with a slightly damp soft cloth with mild bar soap. Be sure to wipe with the grain of the leather. Then wipe again with the damp cloth but without the soap and let the leather air dry completely.</p>
+
+        <button class="button">Add to Cart</button>
+      </div>
+      <section id="app">
+        <div id="input1">
+        <div class="container2">
+          <div class="row">
+            <div class="col-6">
+              <div class="comment">
+            <p v-for="items in item" v-text="items"></p>
+              </div><!--End Comment-->
+              </div><!--End col -->
+              </div><!-- End row -->
+          <div class="row">
+            <div class="col-6">
+          <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+              <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+            </div><!-- End col -->
+          </div><!--End Row -->
+        </div><!--End Container -->
+    </div>
+      </section><!-- end App -->
+
+    
+    </main>
+        <footer className="row center">All right reserved.</footer>
+    </div>
+    <!-- Vue JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script  src="js/script.js"></script>
+</body>
+</html>

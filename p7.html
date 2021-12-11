@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SHOP</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div>
+                <a href="index.html">NCR Shop</a>
+            </div>
+            <div>
+                <a href="Zamora-ECommerce.html">Bags</a>
+                <a href="Shoes.html">Shoes</a>
+                <a href="Signy.html">Sign In</a>
+                <a href="cart.html">Cart</a>
+            </div>
+	   
+
+        </header>
+       
+        <main>
+            <hr>
+      <div id="input1">
+        <img src="images/bag7.png" alt="product-11"/>
+        
+      </div>
+
+      <div id="sidebar" >
+        <h1>Description</h1>
+        <p>Price: 200</p>
+        <p>Balenciaga draws inspiration from military dress by presenting this Army belt bag that is constructed from a hard-wearing fabric for long-lasting wear whilst the heavy duty side buckle straps ensure security. This very cool, heavy duty, black leather belt pouch was most likely, originally, used for some sort of tool case. This would make for a great stash pouch. Great size for keys, lighter, lipsticks, cash or any smaller item.</p>
+
+        <button class="button">Add to Cart</button>
+      </div>
+        <section id="app">
+        <div id="input1">
+        <div class="container2">
+          <div class="row">
+            <div class="col-6">
+              <div class="comment">
+            <p v-for="items in item" v-text="items"></p>
+              </div><!--End Comment-->
+              </div><!--End col -->
+              </div><!-- End row -->
+          <div class="row">
+            <div class="col-6">
+          <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+              <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+            </div><!-- End col -->
+          </div><!--End Row -->
+        </div><!--End Container -->
+    </div>
+      </section><!-- end App -->
+
+    
+    </main>
+        <footer className="row center">All right reserved.</footer>
+    </div>
+    <!-- Vue JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script  src="js/script.js"></script>
+</body>
+</html>

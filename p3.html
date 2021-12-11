@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SHOP</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div>
+                <a href="index.html">NCR Shop</a>
+            </div>
+            <div>
+                <a href="Zamora-ECommerce.html">Bags</a>
+                <a href="Shoes.html">Shoes</a>
+                <a href="Signy.html">Sign In</a>
+                <a href="cart.html">Cart</a>
+            </div>
+	   
+
+        </header>
+       
+        <main>
+            <hr>
+      <div id="input1">
+        <img src="images/bag3.png" alt="product-7"/>
+        
+      </div>
+
+      <div id="sidebar" >
+        <h1>Description</h1>
+        <p>Price: 500</p>
+        <p>This tote bag captivates you with its minimalist silhouette and ample volume which can easily hold all of your documents or a laptop. Its long handles allow you to wear it comfortably on your shoulder, while its zipper closure ensures the safety of all of your belongings. It can even be folded into the size of a paperback book.</p>
+
+        <button class="button">Add to Cart</button>
+      </div>
+      <section id="app">
+        <div id="input1">
+        <div class="container2">
+          <div class="row">
+            <div class="col-6">
+              <div class="comment">
+            <p v-for="items in item" v-text="items"></p>
+              </div><!--End Comment-->
+              </div><!--End col -->
+              </div><!-- End row -->
+          <div class="row">
+            <div class="col-6">
+          <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+              <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+            </div><!-- End col -->
+          </div><!--End Row -->
+        </div><!--End Container -->
+    </div>
+      </section><!-- end App -->
+
+    
+    </main>
+        <footer className="row center">All right reserved.</footer>
+    </div>
+    <!-- Vue JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script  src="js/script.js"></script>
+</body>
+</html>
